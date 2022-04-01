@@ -1,0 +1,10 @@
+[liveuser@localhost Downloads]$ sha256sum KeePassXC-2.7.0-arm64.dmg
+180c57e552fe64fcc0916306575098507be66c08446efdb64a68ed7770a94567  KeePassXC-2.7.0-arm64.dmg
+[liveuser@localhost Downloads]$ sha256sum KeePassXC-2.7.0-x86_64.dmg
+777f03f6bc5bf7fdb45cf72017abb59883933cebdfac12febaf9fe3197dd1195  KeePassXC-2.7.0-x86_64.dmg
+[liveuser@localhost Downloads]$ sha256sum KeePassXC-2.7.0-Win64.msi
+9474b9afba75043886d0e02e62ae17b9433b9ad0777023a2d753b00c418a9b86  KeePassXC-2.7.0-Win64.msi
+[liveuser@localhost Downloads]$ sha256sum KeePassXC-2.7.0-Win64.zip
+104574f8e4977792d1b600f89e3abb4cf444bf9b10c9c7c32ad08814b32a5d25  KeePassXC-2.7.0-Win64.zip
+[liveuser@localhost Downloads]$ sha256sum keepassxc-2.7.0-src.tar.xz
+83be76890904cd6703343fa097d68bcfdd99bb525cf518fa62a7df9293026aa7  keepassxc-2.7.0-src.tar.xz
