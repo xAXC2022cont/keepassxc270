@@ -1,0 +1,62 @@
+[liveuser@localhost Downloads]$ gpg --fetch-keys https://keepassxc.org/keepassxc_master_signing_key.asc
+gpg: directory `/home/liveuser/.gnupg' created
+gpg: new configuration file `/home/liveuser/.gnupg/gpg.conf' created
+gpg: WARNING: options in `/home/liveuser/.gnupg/gpg.conf' are not yet active during this run
+gpg: keyring `/home/liveuser/.gnupg/secring.gpg' created
+gpg: keyring `/home/liveuser/.gnupg/pubring.gpg' created
+gpg: /home/liveuser/.gnupg/trustdb.gpg: trustdb created
+gpg: key 6397D0D2: public key "KeePassXC Release <release@keepassxc.org>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1  (RSA: 1)
+gpg: no ultimately trusted keys found
+[liveuser@localhost Downloads]$ gpg --keyserver hkps://keyserver.ubuntu.com --recv-keys CFB4C2166397D0D2
+gpg: requesting key 6397D0D2 from hkps server keyserver.ubuntu.com
+gpg: key 6397D0D2: "KeePassXC Release <release@keepassxc.org>" 12 new signatures
+gpg: no ultimately trusted keys found
+gpg: Total number processed: 1
+gpg:         new signatures: 12
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-*.sig
+gpg: Signature made Tue 22 Mar 2022 12:27:00 AM UTC using RSA key ID B59076A8
+gpg: BAD signature from "KeePassXC Release <release@keepassxc.org>"
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-2.7.0-
+KeePassXC-2.7.0-arm64.dmg          KeePassXC-2.7.0-Win64.zip
+KeePassXC-2.7.0-arm64.dmg.DIGEST   KeePassXC-2.7.0-Win64.zip.DIGEST
+KeePassXC-2.7.0-arm64.dmg.sig      KeePassXC-2.7.0-Win64.zip.sig
+KeePassXC-2.7.0-Win64.msi          KeePassXC-2.7.0-x86_64.dmg
+KeePassXC-2.7.0-Win64.msi.DIGEST   KeePassXC-2.7.0-x86_64.dmg.DIGEST
+KeePassXC-2.7.0-Win64.msi.sig      KeePassXC-2.7.0-x86_64.dmg.sig
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-2.7.0-arm64.dmg.sig 
+gpg: Signature made Tue 22 Mar 2022 12:27:00 AM UTC using RSA key ID B59076A8
+gpg: Good signature from "KeePassXC Release <release@keepassxc.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BF5A 669F 2272 CF43 24C1  FDA8 CFB4 C216 6397 D0D2
+     Subkey fingerprint: C1E4 CBA3 AD78 D3AF D894  F9E0 B7A6 6F03 B590 76A8
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-2.7.0-x86_64.dmg.sig 
+gpg: Signature made Tue 22 Mar 2022 12:27:00 AM UTC using RSA key ID B59076A8
+gpg: Good signature from "KeePassXC Release <release@keepassxc.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BF5A 669F 2272 CF43 24C1  FDA8 CFB4 C216 6397 D0D2
+     Subkey fingerprint: C1E4 CBA3 AD78 D3AF D894  F9E0 B7A6 6F03 B590 76A8
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-2.7.0-Win64.msi.sig 
+gpg: Signature made Tue 22 Mar 2022 12:52:34 AM UTC using RSA key ID B59076A8
+gpg: Good signature from "KeePassXC Release <release@keepassxc.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BF5A 669F 2272 CF43 24C1  FDA8 CFB4 C216 6397 D0D2
+     Subkey fingerprint: C1E4 CBA3 AD78 D3AF D894  F9E0 B7A6 6F03 B590 76A8
+[liveuser@localhost Downloads]$ gpg --verify KeePassXC-2.7.0-Win64.zip.sig 
+gpg: Signature made Tue 22 Mar 2022 12:52:49 AM UTC using RSA key ID B59076A8
+gpg: Good signature from "KeePassXC Release <release@keepassxc.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BF5A 669F 2272 CF43 24C1  FDA8 CFB4 C216 6397 D0D2
+     Subkey fingerprint: C1E4 CBA3 AD78 D3AF D894  F9E0 B7A6 6F03 B590 76A8
+[liveuser@localhost Downloads]$ gpg --verify keepassxc-2.7.0-src.tar.xz.sig 
+gpg: Signature made Mon 21 Mar 2022 11:50:26 PM UTC using RSA key ID B59076A8
+gpg: Good signature from "KeePassXC Release <release@keepassxc.org>"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: BF5A 669F 2272 CF43 24C1  FDA8 CFB4 C216 6397 D0D2
+     Subkey fingerprint: C1E4 CBA3 AD78 D3AF D894  F9E0 B7A6 6F03 B590 76A8
